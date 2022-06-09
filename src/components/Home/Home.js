@@ -5,6 +5,7 @@ import profile from '../../img/sourav1.jpg'
 import About from '../About/About';
 import MySkills from '../About/MySkills';
 import WaterWave from 'react-water-wave';
+import MyProjects from './MyProjects';
 
 const Home = () => {
 
@@ -18,9 +19,6 @@ const Home = () => {
                 style={{
                     backgroundImage: `url(${profile})`
                 }}>
-
-
-
                 <div className="hero-overlay lg:bg-opacity-100"></div>
                 <div className="hero-content  text-neutral-content">
                     <div className='w-1/5'><img className='lg:block hidden w-full' src={profile} alt="myprofile" /></div>
@@ -41,6 +39,7 @@ const Home = () => {
 
             <About></About>
             <MySkills></MySkills>
+            <MyProjects></MyProjects>
         </div>
     );
 };

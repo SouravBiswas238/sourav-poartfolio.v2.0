@@ -6,7 +6,7 @@ const MySkills = () => {
 
 
     return (
-        <div className='bg-black py-5'>
+        <div className='bg-black py-5 border-b-2'>
             <div className='text-center text-3xl text-secondary mb-10'>
                 <h2 className='text-white text-bold uppercase text-5xl' >Skills </h2>
             </div>
@@ -24,9 +24,6 @@ const MySkills = () => {
                 <Progress value='75' name='mongodb'></Progress>
                 <Progress value='60' name='Express.js'></Progress>
                 <Progress value='70' name='Firebase'></Progress>
-
-
-
             </div>
 
 
