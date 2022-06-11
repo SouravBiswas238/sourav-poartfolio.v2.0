@@ -15,11 +15,11 @@ const About = () => {
             </div>
 
 
-            <div className='grid grid-cols-2 grid-flow-col gap-4'>
+            <div className='grid lg:grid-cols-2 lg:grid-flow-col gap-4'>
 
                 <div class="mx-4 px-10 ">
                     <h5 class="text-3xl text-base-200  text-uppercase fw-bold mb-5 mx-10">Personal Infos</h5>
-                    <div className='grid lg:grid-cols-2 '>
+                    <div className='grid lg:grid-cols-2'>
                         <div class="">
                             <h4 className='text-slate-400'>First Name: <span class="text-white"> Sourav</span></h4>
                             <h4 className='text-slate-400'>last Name: <span class="text-white"> Biswas</span></h4>
@@ -48,27 +48,16 @@ const About = () => {
 
                 <div className='grid lg:grid-cols-2'>
 
-                    <div class="w-2/3 h-[200px] p-5 bg-neutral text-neutral-content mb-2">
+                    <div class="lg:w-2/3 lg:h-[200px] p-5 bg-neutral text-neutral-content mb-2">
                         <h2 className='text-warning text-3xl my-0 text-center'>3+</h2>
                         <h2 class="text-2xl uppercase" >YEARS OF EXPERIENCE!</h2>
 
                     </div>
-                    <div class="w-2/3  h-[200px] p-5 bg-neutral text-neutral-content mb-2">
+                    <div class="lg:w-2/3 lg:h-[200px] p-5 bg-neutral text-neutral-content mb-2">
                         <h2 className='text-warning text-3xl text-center'>97 +</h2>
                         <h2 class="text-end text-3xl uppercase">Projects</h2>
                     </div>
 
-                    <div class="w-2/3 h-[200px] p-5 bg-neutral text-neutral-content">
-                        <h2 className='text-warning text-3xl my-0 text-center'>50+</h2>
-                        <h2 class="text-2xl uppercase" >HAPPY
-                            CUSTOMERS</h2>
-                    </div>
-
-                    <div class="w-2/3  h-[200px] p-5 bg-neutral text-neutral-content">
-                        <h2 className='text-warning text-3xl text-center'>3</h2>
-                        <h2 class="text-end text-3xl uppercase">AWARDS
-                            WON</h2>
-                    </div>
 
 
 
