@@ -14,61 +14,48 @@ import './Projects.css'
 const Projects = () => {
 
     //data
-    const teamData = [
+    const ProjectData = [
         {
-            "id": 2,
-            "image": "https://i.ibb.co/FzfT6C7/IMG-20220819-WA0030-01.jpg",
+            "id": 1,
+            "image": "https://i.ibb.co/1Z0G5Kx/collage-1.jpg",
+            // "image": "https://i.ibb.co/WxPQXHN/collage.jpg",
+            "name": "Recruit Hub",
+            "shortDescription": "A hiring Agency",
+            "liveLink": "https://recruit-hub-bbd21.web.app/",
+            "clientCode": "https://github.com/thecreativegang/recruit-hub-client-2",
+            "serverCode": "https://github.com/thecreativegang/recruit-hub-server",
 
-            "name": "Sumon Bala",
-            "role": "Front End Developer"
-
-        }, {
-            "id": 3,
-            "image": " https://i.ibb.co/Gcdr7Bx/IMG-20220324-WA0007.jpg?fbclid=IwAR0rtRclgfI3FP6pw0-LJA9hque85ifuEOxEetYSk-8K_D1FLZk2lqKQCIA",
-
-
-            "name": "Sourav Biswas",
-            "role": "Backend Engineer"
 
         },
         {
-            "id": 4,
-            "image": " https://i.ibb.co/0rw6KCf/Screenshot-2022-01-14-092731-1.png",
+            "id": 2,
+            "image": "https://i.ibb.co/K7GP7M6/collage.jpg",
+            "name": "Flash Electronic",
+            "shortDescription": "A manufacturer website",
+            "liveLink": "https://flash-electronic.web.app/",
+            "clientCode": "https://github.com/SouravBiswas238/manufacturer-website-client",
+            "serverCode": "https://github.com/SouravBiswas238/manufacturer-website-server",
 
 
-            "name": "Tanvir Ahmed",
-            "role": "Team Lead"
+        },
 
-        }, {
-            "id": 5,
-            "image": " https://swiperjs.com/demos/images/nature-4.jpg",
-
-            "name": "Jahid Hasan",
-            "role": "Full Stack Developer"
-
-        }, {
-            "id": 6,
-            "image": " https://swiperjs.com/demos/images/nature-2.jpg",
-
-
-            "name": "Hasib Alam",
-            "role": "Node Js Developer"
-
-        }, {
+        {
             "id": 7,
             "image": " https://i.ibb.co/qgJmNhg/3.jpg",
-
-
             "name": "Sourav Fitness",
-            "role": "Node Js Developer"
+            "shortDescription": "Personal Fitness Trainer",
+            "liveLink": "https://flash-electronic.web.app/",
+            "clientCode": "https://github.com/SouravBiswas238/independent-service-provider",
+
+
 
         }
     ]
 
     return (
-        <div className='slider-container py-10 bg-[#f3f3f3] dark:bg-[#0b1120]'>
+        <div className='slider-container py-10  bg-[#0b1120]'>
             <div className="text-center mb-10">
-                <h1 className="text-[#1C2880] dark:text-[#E2E8F0] text-[2rem] md:text-[3.5rem] leading-[3.2rem]  font-semibold mb-2">
+                <h1 className="  text-[#E2E8F0] text-[2rem] md:text-[3.5rem] leading-[3.2rem]  font-semibold mb-2">
                     My Amazing Projects
                 </h1>
             </div>
@@ -101,19 +88,37 @@ const Projects = () => {
                 className="mySwiper"
             >
 
-
-
-
                 {
-                    teamData.map(team => <SwiperSlide key={team.id} className='p-4 bg-white dark:bg-[#182133]  shadow-lg'>
+                    ProjectData.map(project => <SwiperSlide key={project.id} className='p-4 bg-white  bg-[#182133]  shadow-lg'>
                         <div className='bg-red h-full'>
 
-                            <img src={team?.image} alt='images' />
+                            <img src={project?.image} alt='images' />
+
+                            <div className='grid gap-1'>
 
 
+                                <h1 className='text-[#1C2880]  text-[#38BDF8] font-semibold mt-2 flex justify-between'>
 
-                            <h1 className='text-[#1C2880] dark:text-[#38BDF8] font-semibold mt-2'>{team?.name}</h1>
-                            <h1 className='dark:text-[#E2E8F0]'>{team?.role}</h1>
+                                    {project?.name}
+                                    <span className='font-semibold text-[16px] flex items-center'>
+
+                                        <a className=' hover:bg-[#1C2880]  hover:text-white  text-white  bg-[#1F2937] 
+                        rounded-full border-2 border-[#1C2880] py-2 px-3 ease-in duration-300' href={project?.liveLink} target='_'  >liveSite</a>
+                                        <a className='mx-2 hover:bg-[#1C2880]  hover:text-white  text-white  bg-[#1F2937] 
+                        rounded-full border-2 border-[#1C2880] py-2 px-3 ease-in duration-300'  href={project?.clientCode} target='_' >Client</a>
+                                        {
+                                            project.serverCode && <a className='font-semibold hover:bg-[#1C2880]  hover:text-white  text-white  bg-[#1F2937] flex items-center
+                                            rounded-full border-2 border-[#1C2880] py-2 px-3 ease-in duration-300'  href={project?.serverCode} target='_' >Server</a>
+                                        }
+                                    </span>
+
+                                </h1>
+
+
+                                <h6 className=' text-[#E2E8F0]'>{project?.shortDescription}</h6>
+
+                            </div>
+
 
                         </div>
 

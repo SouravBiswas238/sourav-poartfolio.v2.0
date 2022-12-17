@@ -1,3 +1,9 @@
 .inner-img {
     background-position: calc(50% + 0.0703125px) calc(50% + 4.52925px);
 }
+
+.my-bg-position {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

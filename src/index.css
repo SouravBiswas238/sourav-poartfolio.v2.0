@@ -12,6 +12,14 @@ code {
     monospace;
 }
 
+.bg-offWhite {
+  background-image: linear-gradient(90deg,
+      rgba(253, 207, 207, 0.171) 0%,
+      rgba(202, 210, 248, 0.146) 100%);
+
+  border-bottom: 1px solid rgba(221, 221, 221, 0.146);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
